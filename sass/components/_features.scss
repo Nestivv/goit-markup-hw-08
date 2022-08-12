@@ -1,0 +1,29 @@
+.features-list {
+  --quantity-items: 4;
+
+  &__title {
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-main-primary);
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    width: 270px;
+  }
+
+  &__icon-thumb {
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+
+    display: block;
+  }
+}

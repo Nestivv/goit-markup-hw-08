@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--background-footer);
+  padding: 60px 0;
+}
+
+.footer-thumb {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-adress {
+  color: var(--text-footer-primary);
+  font-style: normal;
+  margin-top: 20px;
+}

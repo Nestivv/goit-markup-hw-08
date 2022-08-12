@@ -1,0 +1,46 @@
+.social-links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link--footer {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--main-hover-color);
+  }
+
+  &__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+  }
+
+  &__icon--team {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon--footer {
+    fill: var(--text-accent-secondary);
+  }
+
+  &__link:hover &__icon--team,
+  &__link:focus &__icon--team {
+    fill: var(--text-accent-secondary);
+  }
+}

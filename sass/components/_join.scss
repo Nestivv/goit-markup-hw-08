@@ -1,0 +1,11 @@
+.section-join {
+  margin-left: 70px;
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--text-accent-secondary);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}

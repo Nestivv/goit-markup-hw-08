@@ -1,0 +1,16 @@
+.secondary-contacts {
+  margin-top: 9px;
+
+  &__link {
+    color: var(--text-footer-secondary);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--main-hover-color);
+  }
+
+  &__item:last-child {
+    margin-top: 9px;
+  }
+}

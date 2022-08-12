@@ -1,0 +1,40 @@
+.main-contacts {
+  display: flex;
+  align-items: center;
+
+   &__item {
+    display: flex;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: var(--text-main-secondary);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--main-hover-color);
+  }
+
+  &__link:hover .icon__phone,
+  &__link:hover .icon__envelope {
+    fill: var(--main-hover-color);
+  }
+
+  &__link:focus .icon__phone,
+  &__link:focus .icon__envelope {
+    fill: var(--main-hover-color);
+  }
+}
+
+.icon__phone,
+.icon__envelope {
+  fill: var(--text-main-secondary);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
