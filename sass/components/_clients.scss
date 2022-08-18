@@ -1,13 +1,17 @@
 .customer__title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: var(--text-main-primary);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 .customer-list {
-  display: flex;
-  gap: 30px;
+  --quantity-items: 2;
 
   &__icon {
     display: block;
@@ -18,7 +22,6 @@
   }
 
   &__link {
-    width: 170px;
     height: 92px;
     border: 1px solid var(--svg-color);
     border-radius: 4px;
@@ -37,5 +40,13 @@
   &__link:hover &__icon,
   &__link:focus &__icon {
     fill: var(--main-hover-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    --quantity-items: 3;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --quantity-items: 6;
   }
 }

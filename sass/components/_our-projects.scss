@@ -1,4 +1,5 @@
 .portfolio-list {
+  --quantity-items: 1;
   font-size: 16px;
   line-height: 1.88;
 
@@ -54,5 +55,13 @@
   &__link:hover &__floated-description,
   &__link:focus &__floated-description {
     transform: translateY(0%);
+  }
+
+  @media screen and (min-width: 768px) {
+    --quantity-items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --quantity-items: 3;
   }
 }

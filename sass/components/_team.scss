@@ -2,17 +2,24 @@
   background-color: var(--background-team);
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: var(--text-main-primary);
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team-list {
-  --quantity-items: 4;
+  --quantity-items: 1;
+  font-size: 16px;
+  line-height: 1.19;
 
   &__member {
     background-color: var(--background-member-card);
@@ -24,21 +31,28 @@
     color: var(--text-main-primary);
 
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
   }
 
   &__specialization {
     margin-top: 10px;
     margin-bottom: 16px;
-
-    font-size: 16px;
-    line-height: 1.19;
   }
 
   &__person {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    --quantity-items: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --quantity-items: 4;
   }
 }
