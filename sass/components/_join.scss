@@ -1,5 +1,5 @@
 .section-join {
-  margin-left: 70px;
+  margin-top: 60px;
 
   &__title {
     margin-bottom: 20px;
@@ -7,5 +7,20 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-top: 0px;
   }
 }
