@@ -48,7 +48,7 @@
         <ul class="main-contacts header__main-contacts list">
           <li class="main-contacts__item">
             <a href="mailto:info@devstudio.com" class="main-contacts__link"
-              ><svg class="icon main-contacts__icon" width="16px" height="12px">
+              ><svg class="icon-envelope main-contacts__icon-envelope" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope" class="icon__envelope"></use></svg
               >info@devstudio.com</a
             >
@@ -56,12 +56,22 @@
 
           <li class="main-contacts__item">
             <a href="tel:+380961111111" class="main-contacts__link"
-              ><svg class="icon main-contacts__icon" width="10px" height="16px">
+              ><svg
+                class="icon-smartphone main-contacts__icon-smartphone"
+                width="10px"
+                height="16px"
+              >
                 <use href="./images/icons.svg#smartphone" class="icon__phone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+
+        <button type="button" class="btn mobile-menu" data-menu-open>
+          <svg class="icon mobile-menu__icon-gamburger" width="40px" height="40px">
+            <use href="./images/icons.svg#gamburger" class="gamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -407,5 +417,85 @@
         </div>
       </div>
     </footer>
+
+    <!-- //Mobile menu -->
+<div class="menu" data-menu>
+  <div class="menu-container">
+
+    <!-- /pages -->
+  <ul class="list-page list">
+    <li class="list-page__item">
+      <a href="./index.html" class="list-page__link">Студия</a>
+    </li>
+    <li class="list-page__item">
+      <a href="./portfolio.html" class="list-page__link">Портфолио</a>
+    </li>
+    <li class="list-page__item"><a href="" class="list-page__link">Контакты</a></li>
+  </ul>
+
+<!-- /contacts -->
+  <ul class="list-contacts list">
+    <li class="list-contacts__item">
+      <a href="mailto:info@example.com" class="list-contacts__link"
+        >info@example.com</a
+      >
+    </li>
+    <li class="list-contacts__item">
+      <a href="tel:+380991111111" class="list-contacts__link">+38 099 111 11 11</a>
+    </li>
+  </ul>
+
+<!-- /social-links -->
+<ul class="social-pages list">
+  <li class="social-pages__item">
+    <a
+      href=""
+      class="social-pages__link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="instagram"
+    >Instagram</a>
+  </li>
+
+  <li class="social-pages__item">
+    <a
+      href=""
+      class="social-pages__link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="twitter"
+    >Twitter</a>
+  </li>
+
+  <li class="social-pages__item">
+    <a
+      href=""
+      class="social-pages__link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="facebook"
+    >Facebook</a>
+  </li>
+
+  <li class="social-pages__item">
+    <a
+      href=""
+      class="social-pages__link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="linkedln"
+    >Linkedln</a>
+  </li>
+</ul>
+
+<button type="button" class="btn mobile-close" data-menu-close>
+  <svg class="icon mobile-close__icon-close" width="40px" height="40px">
+    <use href="./images/icons.svg#cross" class="mobile-cross"></use></svg>
+</button>
+  </div>
+</div>
+
+    <!-- // Scripts -->   
+    <script src="./js/menu.js"></script>
   </body>
 </html>

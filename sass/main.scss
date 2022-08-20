@@ -10,9 +10,16 @@
 // /vendors
 @import './vendors/hidden';
 
+// /layout
+@import './layout/body';
+@import './layout/header';
+@import './layout/footer';
+
 // /components
+@import './components/btn';
 @import './components/logo';
 @import './components/main-contacts';
+@import './components/mobile-menu';
 @import './components/hero';
 @import './components/features';
 @import './components/description';
@@ -24,11 +31,10 @@
 @import './components/filter-button';
 @import './components/our-projects';
 @import './components/social-links';
-@import './components/btn';
+@import './components/footer-section-contacts';
 @import './components/backdrop';
 @import './components/modal';
 
-// /layout
-@import './layout/body';
-@import './layout/header';
-@import './layout/footer';
+
+
+

@@ -1,6 +1,17 @@
 .main-contacts {
-  display: flex;
-  align-items: center;
+  display: none;
+  
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
 
    &__item {
     display: flex;
@@ -11,11 +22,44 @@
     align-items: center;
     color: var(--text-main-secondary);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  &__icon {
-    margin-right: 10px;
+    @media screen and (min-width:768px) {
+      font-size: 12px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+  }}
+
+  &__icon-envelope {
+    
+    @media screen and (min-width:768px) {
+      margin-right: 8px;
+      width: 14px;
+      height: 10px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
   }
+}
+
+&__icon-smartphone {
+    
+  @media screen and (min-width:768px) {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+}
+}
 
   &__link:hover,
   &__link:focus {
