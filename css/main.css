@@ -500,12 +500,24 @@ a {
   padding: 200px 0;
   background-color: var(--background-hero);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-index/hero.jpg);
-  background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/img-index/hero.jpg);
   background-repeat: no-repeat;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero/hero.jpg);
+  background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/img-hero/hero.jpg);
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-index/hero.jpg);
+    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/img-index/hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-index/hero.jpg);
+    background-image: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/img-index/hero.jpg);
+  }
 }
 
 .hero__title {
@@ -843,7 +855,7 @@ a {
   }
 }
 .subscribe__input {
-  max-width: 450px;
+  width: 100%;
   background-color: transparent;
   padding: 15px 16px;
   color: var(--text-footer-secondary);
@@ -851,6 +863,11 @@ a {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .subscribe__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__input {

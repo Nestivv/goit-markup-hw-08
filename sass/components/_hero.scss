@@ -2,12 +2,23 @@
   padding: 200px 0;
   background-color: var(--background-hero);
   text-align: center;
-  background-image: linear-gradient(180deg, #2f303a66 0%, rgba(47, 48, 58, 0.4) 100%),
-    url(../images/img-index/hero.jpg);
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+// /mobile screen
+  background-image: linear-gradient(180deg, #2f303a66 0%, rgba(47, 48, 58, 0.4) 100%),
+  url(../images/img-hero/Header img@1x_sm.jpg);
+// /tablet screen
+  @media screen and (min-width: 768px){
+    background-image: linear-gradient(180deg, #2f303a66 0%, rgba(47, 48, 58, 0.4) 100%),
+  url(../images/img-index/Header img@1x_md.jpg);
+  }
+  // /desktop screen
+  @media screen and (min-width: 1200px){
+    background-image: linear-gradient(180deg, #2f303a66 0%, rgba(47, 48, 58, 0.4) 100%),
+  url(../images/img-index/Header img@1x_lg.jpg);
+  }
 }
 
 .hero__title {
