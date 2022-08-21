@@ -119,7 +119,9 @@ position: absolute;
 }
 
 .mobile-close:focus,
-.mobile-close:hover{
+.mobile-close:hover,
+.mobile-menu:hover,
+.mobile-menu:focus{
 fill: var(--text-accent-primary);
 }
 
